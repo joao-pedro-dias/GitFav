@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --ff-primary: 'Poppins', sans-serif;
+  --text-color: #FFFF;
+
+  --hue: 194;
+  --primary-color: #092D38;
+}
+
+body {
+  font-size: 1.6rem;
+  color: var(--text-color);
+  background-color: #000000;
+}
+
+body * {
+  font-family: var(--ff-primary);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+#app {
+  padding: 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 2.5rem 0;
+}
+
+header h1 {
+  color: #FFFFFF;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search input {
+  background: #06181C;
+  height: 4rem;
+  width: 30rem;
+  border: 1px solid #06181C;
+  border-radius: .4rem;
+  padding: 0 .8rem;
+  color: #FFFFFF;
+}
+
+.search button {
+  background-color: #065E7C;
+  margin-left: 0.5rem;
+  border-radius: .4rem;
+  height: 4rem;
+  border: none;
+  padding: 0 1rem;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: bold ;
+
+  cursor: pointer;
+}
+
+.search button:hover{
+  background-color: #FFFFFF;
+  color: #065E7C;
+}
+
+.search button:hover {
+  filter: brightness(1.1)
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+
+  box-shadow: 0 1rem 2rem -1rem rgba(0, 0, 0, 0.3);
+}
+
+table * {
+  font-size: 1.4rem;
+  color: var(--text-color);
+}
+
+table th {
+  background: var(--primary-color);
+  text-align: left;
+  padding: 1.5rem;
+}
+
+table th:first-child {
+  border-top-left-radius: .4rem;
+}
+
+table th:last-child {
+  border-top-right-radius: .4rem;
+}
+
+table tr:nth-child(even) {
+  background: #06161B;
+}
+
+table tr:nth-child(odd) {
+  background: #06181C;
+}
+
+table td {
+  padding: 1.5rem;
+  text-align: left;
+}
+
+td.user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+td.user img {
+  width: 5rem;
+  height: 5rem;
+
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+td.user a {
+  text-decoration: none;
+}
+
+td.user a p {
+  font-weight: bold;
+}
+
+td .remove {
+  background: none;
+  border: none;
+
+  color: red;
+
+  cursor: pointer;
+}
